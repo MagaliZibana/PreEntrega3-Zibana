@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'opensans';
+    src: url("../../font/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+@mixin texto($color, $font-size, $font-weight, $letter-spacing, $tipo-fuente) {
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
+
+    @if $tipo-fuente =="mayus" {
+        text-transform: uppercase;
+    }else {
+        text-transform: capitalize;
+    }
+}

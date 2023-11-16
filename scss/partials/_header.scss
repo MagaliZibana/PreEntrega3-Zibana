@@ -1,0 +1,50 @@
+@import "../partials/tamaños-pantalla";
+@import "../partials/media-queries";
+
+.navbar {
+    background-color: black;   
+    padding: 10px 0;
+    .contenedor-menu {
+        display: flex;
+        align-items: center;
+        .navbar-toggler {
+            border: 0;
+            .navbar-toggler-icon {
+                background-image: url("../../imgs/menu-hamburguesa.png");
+                width: 30px;
+            }
+        }
+        .nav-link {
+            font-size: 14px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            &:focus,&:hover {
+                color: $color-principal;
+            }
+        }
+        .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+            color: $color-principal;
+            font-weight: 600;
+        }
+    }
+}
+
+
+.contenedor-menu {
+    width: 60%;
+}
+
+@include media-queries ($tablet) {
+   .contenedor-menu {
+    width: 55%;
+   }
+}
+@include media-queries ($notebook) {
+    .navbar {
+        padding: 20px 0;
+    }
+    .logo {
+        width: 80px;
+    }
+}

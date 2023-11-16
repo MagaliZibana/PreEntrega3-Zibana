@@ -1,0 +1,450 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "opensans";
+  src: url("../../font/OpenSans-VariableFont_wdth,wght.ttf");
+}
+.navbar {
+  background-color: black;
+  padding: 10px 0;
+}
+.navbar .contenedor-menu {
+  display: flex;
+  align-items: center;
+}
+.navbar .contenedor-menu .navbar-toggler {
+  border: 0;
+}
+.navbar .contenedor-menu .navbar-toggler .navbar-toggler-icon {
+  background-image: url("../../imgs/menu-hamburguesa.png");
+  width: 30px;
+}
+.navbar .contenedor-menu .nav-link {
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.navbar .contenedor-menu .nav-link:focus, .navbar .contenedor-menu .nav-link:hover {
+  color: #FF1827;
+}
+.navbar .contenedor-menu .navbar-nav .nav-link.active, .navbar .contenedor-menu .navbar-nav .nav-link.show {
+  color: #FF1827;
+  font-weight: 600;
+}
+
+.contenedor-menu {
+  width: 60%;
+}
+
+@media (min-width: 750px) {
+  .contenedor-menu {
+    width: 55%;
+  }
+}
+@media (min-width: 992px) {
+  .navbar {
+    padding: 20px 0;
+  }
+  .logo {
+    width: 80px;
+  }
+}
+/* FOOTER */
+footer {
+  background-color: black;
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+.parrafoFooter {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (min-width: 992px) {
+  footer {
+    padding: 40px 0;
+  }
+  footer .parrafoFooter {
+    font-size: 16px;
+  }
+}
+body {
+  font-family: "opensans";
+}
+
+.fondo-inicio {
+  background-color: black;
+}
+
+.contenedorImagenPresentacion {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../imgs/Coca-Cola-fondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contenedorImagenPresentacion .contenedorTextosPrincipales {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  bottom: 320px;
+  width: 80%;
+}
+
+.subtitulosInicio {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+.subtitulosInicio else {
+  text-transform: capitalize;
+}
+
+.titulosInicio {
+  color: #FF1827;
+  letter-spacing: 1.5px;
+}
+
+.lata-bebida {
+  width: 328px;
+  height: 394px;
+}
+
+/* COCA ZERO */
+.CocaColaZero {
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+/* FANTA */
+.Fanta {
+  color: #FF8300;
+}
+
+/* SPRITE */
+.Sprite {
+  color: #6BB64A;
+}
+
+/* COCA COLA VIDRIO */
+.CocaColaVidrioTitulo {
+  font-weight: 700;
+}
+
+.CocaColaVidrio {
+  font-weight: 600;
+}
+
+@media (min-width: 750px) {
+  .contenedorImagenPresentacion {
+    height: 70vh;
+  }
+  .contenedorImagenPresentacion .contenedorTextosPrincipales {
+    bottom: 200px;
+  }
+  .contenedorImagenPresentacion .subtitulosInicio {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .contenedorImagenPresentacion {
+    height: 70vh;
+  }
+  .contenedorImagenPresentacion .contenedorTextosPrincipales {
+    bottom: 140px;
+  }
+  .contenedorImagenPresentacion .subtitulosInicio {
+    font-size: 1.6rem;
+  }
+  .contenedor-menu {
+    width: 100%;
+  }
+  .titulosInicio {
+    font-size: 3rem;
+  }
+  .lata-bebida {
+    width: 430px;
+    height: 560px;
+  }
+}
+@media (min-width: 1064px) {
+  .contenedorImagenPresentacion {
+    height: 80vh;
+  }
+  .contenedorImagenPresentacion .contenedorTextosPrincipales {
+    bottom: 50px;
+  }
+  .contenedorImagenPresentacion .subtitulosInicio {
+    font-size: 1.6rem;
+  }
+  .subtitulosInicio {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1232px) {
+  .contenedorImagenPresentacion {
+    height: 100vh;
+  }
+  .contenedorImagenPresentacion .contenedorTextosPrincipales {
+    bottom: -100px;
+  }
+  .contenedorImagenPresentacion .subtitulosInicio {
+    font-size: 2rem;
+  }
+  .titulosInicio {
+    font-size: 3.5rem;
+  }
+  .lata-bebida {
+    width: 470px;
+    height: 600px;
+  }
+}
+/* *** PAGINA MARCAS *** */
+/* Coca Cola */
+.contenedorLogoMarcas {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+.contenedorLogoMarcas .logoMarca {
+  width: 120px;
+  height: auto;
+}
+
+/* Botellas */
+.contenedorBotellaMarcas {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+.contenedorBotellaMarcas .textoCocaCola {
+  color: #FF1827;
+}
+.contenedorBotellaMarcas .textoSprite {
+  color: #6BB64A;
+}
+.contenedorBotellaMarcas .textoFanta {
+  color: #FF8300;
+}
+
+.botellaMarcas {
+  width: 250px;
+}
+
+.tituloBotellaMarcas {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.textoBotellaMarcas {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .botellaMarcas {
+    width: 250px;
+  }
+  .tituloBotellaMarcas, .textoBotellaMarcas {
+    text-align: start;
+  }
+}
+@media (min-width: 1232px) {
+  .botellaMarcas {
+    width: 300px;
+  }
+  .tituloBotellaMarcas {
+    font-size: 34px;
+  }
+  .textoBotellaMarcas {
+    font-size: 20px;
+  }
+}
+.tituloSeccion {
+  background-color: black;
+  padding: 16px 20px;
+  color: white;
+  border-radius: 48px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.tituloPresentacionTrabajaConNosotros {
+  margin: 30px 0;
+}
+
+.descripcionTrabajaConNosotros {
+  font-size: 0.8rem;
+  padding: 0 30px;
+}
+
+.contenedor-trabajo {
+  width: 90%;
+  max-width: 550px;
+  box-shadow: 28px 7px 100px 34px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  border-radius: 40px;
+}
+.contenedor-trabajo .contenedor-descripcion {
+  padding: 30px;
+}
+.contenedor-trabajo .contenedor-descripcion .titulo-trabajo {
+  margin: 20px 0;
+}
+.contenedor-trabajo .contenedor-imagen-trabajo {
+  width: 100%;
+}
+.contenedor-trabajo .contenedor-imagen-trabajo .imagen-trabajo {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.descripcion-foto1 {
+  font-size: 12px;
+}
+
+@media (min-width: 992px) {
+  .tituloSeccion {
+    font-size: 20px;
+  }
+  .descripcionTrabajaConNosotros {
+    font-size: 0.8rem;
+    padding: 0 150px;
+    font-size: 16px;
+  }
+  .descripcion-foto1 {
+    font-size: 16px;
+  }
+  .contenedor-trabajo {
+    width: 90%;
+    max-width: 1159px;
+    box-shadow: 28px 7px 100px 34px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border-radius: 40px;
+  }
+  .contenedor-trabajo .contenedor-imagen-trabajo {
+    width: 50%;
+  }
+  .contenedor-trabajo .contenedor-imagen-trabajo .imagen-trabajo {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 40px;
+  }
+  .contenedor-trabajo .contenedor-imagen-trabajo .imagen-trabajo-reverse {
+    border-radius: 0;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+}
+.descripcionHistoria {
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 0 16px;
+  margin: 30px 0;
+}
+
+.contenedor-historia {
+  margin: 20px 0;
+}
+
+.contenedorContactanos {
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  margin: 24px auto;
+  padding: 16px 40px;
+  border-radius: 100px;
+  max-width: 700px;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+.contenedorContactanosEmail {
+  border-radius: 40px;
+}
+
+.contenedorMensaje {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contenedorMensaje .tituloMensaje {
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+.formularioContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0;
+}
+.formularioContacto .inputContacto {
+  width: 90%;
+  max-width: 700px;
+  margin: 12px 0;
+  padding: 16px 40px;
+  border: 1px solid black;
+  border-radius: 100px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 200;
+  color: black;
+}
+.formularioContacto .botonContacto {
+  background-color: black;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  width: 90%;
+  height: 56px;
+  border-radius: 100px;
+  border: 0;
+  max-width: 700px;
+}
+.formularioContacto .inputMensaje {
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.inputFecha {
+  width: 90%;
+  margin: 12px 0;
+}
+
+.contenedorFecha {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+}
+
+@media (min-width: 750px) {
+  .contenedorFecha {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,72 @@
+/* *** PAGINA MARCAS *** */
+
+/* Coca Cola */
+
+.contenedorLogoMarcas {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+    .logoMarca {
+        width: 120px;
+        height: auto;
+    }
+}
+
+/* Botellas */
+
+.contenedorBotellaMarcas {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+
+    .textoCocaCola {
+        color: $color-principal;
+    }
+    
+    .textoSprite {
+        color: $color-sprite;
+    }
+    
+    .textoFanta {
+        color: $color-fanta;
+    }
+}
+
+.botellaMarcas {
+    width: 250px;
+}
+
+.tituloBotellaMarcas {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.textoBotellaMarcas {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+@include media-queries ($notebook) {
+    .botellaMarcas {
+        width: 250px;
+    }
+    .tituloBotellaMarcas,.textoBotellaMarcas {
+        text-align: start;
+    }
+}
+
+@include media-queries ($desktop-dos) {
+    .botellaMarcas {
+        width: 300px;
+    }
+    .tituloBotellaMarcas {
+        font-size: 34px;
+    }
+    .textoBotellaMarcas {
+        font-size: 20px;
+    }
+}

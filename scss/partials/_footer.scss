@@ -1,0 +1,26 @@
+@import "../partials/tamaños-pantalla";
+@import "../partials/media-queries";
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.parrafoFooter {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+@include media-queries ($notebook) {
+    footer {
+        padding: 40px 0;
+        .parrafoFooter {
+            font-size: 16px;
+        }
+    }
+}
+
