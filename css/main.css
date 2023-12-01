@@ -421,7 +421,15 @@ ul {
   border-radius: 100px;
   border: 0;
   max-width: 700px;
+  transition: all 350ms ease-in;
 }
+
+.formularioContacto .botonContacto:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
 .formularioContacto .inputMensaje {
   padding: 20px;
   border-radius: 30px;

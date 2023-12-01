@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/main.css">
     <title>Inicio</title>
     <meta name="description" content="Bienvenido a la página oficial de Coca-Cola. Refresca tus momentos con nosotros.">
@@ -45,7 +46,9 @@
                 </div>
             </div>
             <div class="ms-auto me-lg-auto ms-lg-5">
-                <img class="logo" src="./imgs/logo-celular.png" alt="Logo de Coca Cola">
+                <a href="./index.html">
+                    <img class="logo" src="./imgs/logo-celular.png" alt="Logo de Coca Cola">
+                </a>
             </div>
         </div>
     </nav>
@@ -53,26 +56,25 @@
     <main>
         <!-- IMAGEN PRINCIPAL -->
 
-        <div class="contenedorImagenPresentacion">
+        <section class="contenedorImagenPresentacion">
             <div class="contenedorTextosPrincipales">
                 <span class="subtitulosInicio"> Te acompañamos desde la </span>
                 <h1 class="titulosInicio">
                     clásica e icónica
                 </h1>
             </div>
-        </div>
+        </section>
 
 
         <!-- CONTENEDOR LATAS -->
 
-        <main class="container text-center">
+        <div class="container text-center">
 
             <!-- COCA COLA ZERO -->
 
-            <div class="row align-items-center g-5">
+            <section class="row align-items-center g-5">
                 <div class="col-12 col-lg-6">
-                    <img class="lata-bebida" src="./imgs/Coca-Cola-Zero.png"
-                        alt="Imagén de una lata de Coca Cola Zero">
+                    <img class="lata-bebida" src="./imgs/Coca-Cola-Zero.png" alt="Imagén de una lata de Coca Cola Zero">
                 </div>
                 <div class="col-12 col-lg-6 descripcion-latas">
                     <span class="subtitulosInicio"> Pasando por la </span>
@@ -80,11 +82,11 @@
                         inigualable zero
                     </h1>
                 </div>
-            </div>
+            </section>
 
             <!-- FANTA -->
 
-            <div class="row align-items-center g-5">
+            <section class="row align-items-center g-5">
                 <div class="col-12 col-lg-6 order-lg-last">
                     <img class="lata-bebida" src="./imgs/Fanta.png" alt="Imagén de una lata de Fanta">
                 </div>
@@ -94,11 +96,11 @@
                         burbujeante Fanta
                     </h1>
                 </div>
-            </div>
+            </section>
 
             <!-- SPRITE -->
 
-            <div class="row align-items-center g-5">
+            <section class="row align-items-center g-5">
                 <div class="col-12 col-lg-6">
                     <img class="lata-bebida" src="./imgs/Sprite.png" alt="Imagén de una lata de Sprite">
                 </div>
@@ -108,11 +110,11 @@
                         frescura de Sprite
                     </h1>
                 </div>
-            </div>
+            </section>
 
-            <!-- SPRITE -->
+            <!-- COCA COLA VIDRIO -->
 
-            <div class="row align-items-center g-5">
+            <section class="row align-items-center g-5">
                 <div class="col-12 col-lg-6 descripcion-latas">
                     <span class="subtitulosInicio"> Hasta la </span>
                     <h1 class="titulosInicio CocaColaVidrioTitulo">
@@ -120,14 +122,13 @@
                     </h1>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <img class="lata-bebida" src="./imgs/CocaColaVidrio 15.png"
-                        alt="Imágen de una Coca Cola de vidrio">
+                    <img class="lata-bebida" src="./imgs/CocaColaVidrio 15.png" alt="Imágen de una Coca Cola de vidrio">
                 </div>
                 <div class="col-12 col-lg-12 descripcion-latas">
                     <span class="subtitulosInicio CocaColaVidrio">Magia de verdad</span>
                 </div>
-            </div>
-        </main>
+            </section>
+        </div>
     </main>
 
 
